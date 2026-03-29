@@ -11,7 +11,7 @@ Do NOT modify this file.
 """
 
 import pytest
-from app.services.jobs.models import Job
+from models import Job
 
 
 # ------------------------------------------------------------------ #

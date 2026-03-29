@@ -1,6 +1,6 @@
 from fastapi import HTTPException
 
-from app.services.jobs.models import Job
+from models import Job
 
 
 class JobRepository:

@@ -3,7 +3,7 @@ from celery import Celery
 from mongoengine import connect
 
 from config import settings
-from app.services.jobs.job_executor import JobExecutor
+from services.jobs.job_executor import JobExecutor
 
 logger = logging.getLogger(__name__)
 
