@@ -78,7 +78,7 @@ FFPROBE_SUCCESS = json.dumps({
 
 @pytest.fixture
 def mock_ffprobe_ok():
-    with patch("worker.subprocess.run") as mock_run:
+    with patch("subprocess.run") as mock_run:
         mock_run.return_value = MagicMock(
             returncode=0, stdout=FFPROBE_SUCCESS, stderr=""
         )
@@ -87,7 +87,7 @@ def mock_ffprobe_ok():
 
 @pytest.fixture
 def mock_ffprobe_fail():
-    with patch("worker.subprocess.run") as mock_run:
+    with patch("subprocess.run") as mock_run:
         mock_run.return_value = MagicMock(
             returncode=1, stdout="", stderr="No such file or directory"
         )
@@ -100,6 +100,6 @@ def mock_ffprobe_fail():
 
 @pytest.fixture
 def mock_hf_whisper():
-    with patch("worker._get_transcription") as mock_transcribe:
+    with patch("services.transcript_extractor.TranscriptExtractor.transcribe") as mock_transcribe:
         mock_transcribe.return_value = "This is a test transcription."
         yield mock_transcribe
