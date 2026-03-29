@@ -3,8 +3,7 @@ from typing import Optional
 
 from services.audio_converter import AudioConverter
 from services.metadata_extractor import MetadataExtractor
-from utils.transcript_extractor import TranscriptExtractor
-from utils.exceptions import TranscriptFailureException, AudioExtractionException
+from services.transcript_extractor import TranscriptExtractor
 
 logger = logging.getLogger(__name__)
 

@@ -1,6 +1,5 @@
 import uuid
 import os
-import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, UploadFile, File, HTTPException
@@ -9,8 +8,6 @@ from mongoengine import connect
 from config import settings
 from models import Job
 from worker import process_media
-
-logger = logging.getLogger(__name__)
 
 
 @asynccontextmanager
