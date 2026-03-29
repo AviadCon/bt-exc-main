@@ -1,11 +1,11 @@
 import logging
-from models import Job
+from app.services.jobs.models import Job
 from services.media_processor import MediaProcessor
 
 logger = logging.getLogger(__name__)
 
 
-class JobProcessor:
+class JobExecutor:
     def __init__(self, job_id: str):
         self.job_id = job_id
         self.job = self._load(job_id)
