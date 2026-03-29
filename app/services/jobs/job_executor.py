@@ -1,5 +1,5 @@
 import logging
-from app.services.jobs.models import Job
+from models import Job
 from services.media_processor import MediaProcessor
 
 logger = logging.getLogger(__name__)
