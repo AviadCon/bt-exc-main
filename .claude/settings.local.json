@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add .)",
+      "Bash(git commit -m \"Initial commit - media processing pipeline scaffold\")",
+      "Bash(rmdir .git/refs/heads/)",
+      "Bash(rm -rf .git/refs/heads/*)",
+      "Bash(mkdir -p .git/refs/heads)",
+      "Bash(rm -rf .git)",
+      "Bash(git init)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
