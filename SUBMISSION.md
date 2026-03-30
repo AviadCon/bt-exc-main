@@ -26,6 +26,13 @@ more usage of OOP and file managment - I believe this is the right way to observ
 
 Added health checks to rabbit and mongo by opening a connection and see they are connectable, if there is an error it will show in the response of the route which will be good for observation tools in the future.
 
+Usage of pydantic baseModel for stractured responses from the API and more detailed swagger (openAPI) docs for future users and programmers on this project.
+
+Waiting between worker jobs to avoid HF rate limits.
+
+Dropzone for easy file upload.
+
+new styling and UI stracture - tab navigation for admin actions ( with no security for now , just for demo)
 ---
 
 ## What I'd do next
@@ -36,7 +43,11 @@ make a middleware that will convert every exception into a detailed log with ext
 
 make a detailed claude.md file with the teams coding schemas and apply it into the project.
 
-more detailed tests
+for the mongo , I would have create a DAL class and then a service class.
+
+more detailed tests.
+
+make a fallback queue for failed uploads
 
 
 ---
