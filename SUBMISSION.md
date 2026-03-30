@@ -68,4 +68,5 @@ extra benefit: this way I will be able to fetch the file with some metadata to p
 
 ## Time spent
 
-3 hours
+4 hours for coding
+1 for documentation and system design question
