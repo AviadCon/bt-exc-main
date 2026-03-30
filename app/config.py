@@ -8,7 +8,7 @@ load_dotenv()
 
 class Settings(BaseSettings):
     mongo_uri: str = "mongodb://localhost:27017/mediadb"
-    rabbitmq_url: str = "amqp://guest:guest@localhost:5672//"
+    rabbitmq_url: str = "amqp://guest:guest@localhost:5672/"
     hf_token: str = os.getenv("HF_TOKEN", "")
     upload_dir: str = "/tmp/uploads"
 
